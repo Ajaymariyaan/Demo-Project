@@ -1,0 +1,15 @@
+.DivParaSearch{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width:auto;
+    padding: 5px;
+    background-color: rgb(230, 238, 231);
+    align-items: center;
+    border-right: 20px;
+    margin-right:15px;
+    margin-left: 12px;
+    color: rgb(102, 92, 92)
+
+
+}

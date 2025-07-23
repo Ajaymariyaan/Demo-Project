@@ -1,0 +1,34 @@
+.ButtonList{
+    display: flex;
+    flex-direction: row;
+    /* justify-content:start; */
+    gap: 10px;
+    background-color:transparent ;
+    align-items: center;
+    margin:5px 15px; 
+    padding:5px 15px; 
+    border-radius: 5px;
+    border-bottom: 1px solid grey; 
+    width: 100%;
+    
+    
+   
+    
+    
+}
+.ButtonTemplateStyle{
+    background-color:transparent;
+    color:rgb(151, 134, 134);
+    border:none;
+     cursor: pointer;
+     
+
+}
+/* .ButtonTemplateStyle{ text-decoration: none; }
+.ButtonTemplateStyle:hover {text-decoration: underline color(green red green blue); }
+     */
+.ButtonStyle{
+background-color: transparent;
+color:grey;
+width:auto
+}

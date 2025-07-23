@@ -1,0 +1,44 @@
+table {
+  width: 100%;
+  background-color: rgb(230, 238, 231);
+  border-spacing: 0;
+  padding:5px 15px;
+  color: rgb(92, 84, 84);
+  
+  
+  
+}
+
+th {
+  background-color: rgb(116, 165, 149);
+  padding: 10px;
+  border: none;
+  align-items: center;
+  color:rgb(92, 84, 84);
+ 
+
+}
+.tableContainer {
+  padding: 8px;
+}
+td {
+  align-items: center;
+
+  justify-content: center;
+  border-bottom: 1px solid rgb(75, 112, 100);
+  padding: 10px;
+}
+thead {
+  background-color: #44544A;
+  border: none;
+  padding: 5px;
+  align-items: lecenterft;
+  border-radius: 4px;
+}
+tr {
+  border-bottom: 1px solid rgb(230, 238, 231);
+}
+
+.tableHeaderRow{
+    border: none;
+}
