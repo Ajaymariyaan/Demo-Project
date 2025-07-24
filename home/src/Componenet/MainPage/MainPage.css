@@ -3,7 +3,8 @@ body{
     margin-right:15px;
     margin-left: 12px;
     border: 1px solid whitesmoke;
-    
+     overflow: hidden; /* Prevent scroll on the page */
+  
     
     
   
@@ -12,7 +13,7 @@ body{
 }
 
 .DivMain{
-    background-color:rgb(230, 238, 231);
+    background-color:white;
     width:auto;
     height:auto;
     box-shadow: 0 2px 4px 0 grey;
@@ -35,8 +36,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color:rgb(230, 238, 231);
-    border-top: 1px solid  rgb(230, 238, 231);
+    background-color:white;
+    /* border-top: 1px solid  rgb(230, 238, 231); */
     align-items:center ;
     padding:5px 15px;
     
@@ -64,5 +65,20 @@ box-shadow: 0 2px 4px 0 grey;
     display: flex;
     flex-direction: row;
     gap:8px;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+.CustomButtonDesign{
+    margin-top: 6px;
+    padding: 4px;
+    align-items: center;
+  
 }
 
+
+.eggCount{
+    /* background-color: rgb(162, 161, 161); */
+    color:rgb(125, 123, 123)
+
+}

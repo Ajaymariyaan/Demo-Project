@@ -11,4 +11,4 @@ function ButtonTemplate(props){
         </>
     )
 }
-export default ButtonTemplate
+export default ButtonTemplate;

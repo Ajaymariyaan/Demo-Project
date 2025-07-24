@@ -1,0 +1,19 @@
+.button1{
+    width:50px;
+    height:30px;
+    border:none;
+    align-items: center;
+    justify-content: center;
+    background:rgb(210, 208, 208);
+    border-radius:3px;
+
+
+
+}
+ .img1{
+    margin: 0px;
+     width:25px;
+    height:25px;
+    border:none;
+    padding: 2px;
+ }
