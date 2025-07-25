@@ -278,28 +278,30 @@
 
 
 import React from "react";
-import './TableOne.css'; // Adjust as needed
+import './TableOne.css'; 
+import SpeciesDesign from "../SpeciesDesign/SpeciesDesign";
 
 function TableOne({ data, searchTerm }) {
-  // Filter the data based on the search term
+ 
   const filteredData = searchTerm 
     ? data.filter((row) => {
         const lowerSearchTerm = searchTerm.toLowerCase();
 
-        // Ensure properties exist and are strings before calling .toLowerCase()
         const species = row.species ? row.species.toLowerCase() : '';
         const eggIdentifier = row.eggIdentifier ? row.eggIdentifier.toLowerCase() : '';
         
-        // Check if the search term is present in either `species` or `eggIdentifier`
+        
         return (
           species.includes(lowerSearchTerm) ||
           eggIdentifier.includes(lowerSearchTerm)
         );
       })
-    : data; // If no search term, show all data
+    : data; 
 
   return (
-    <div className="table-wrapper">
+    <>
+    <div className="tablewrapper">
+   {/* <div class="tableFixHead"> */}
     <table className="tableScroll">
       <thead className="thead">
         <tr className="trHead">
@@ -314,12 +316,14 @@ function TableOne({ data, searchTerm }) {
           <th>WIDTH</th>
         </tr>
       </thead>
+       
       <tbody className="tbody">
+      
         {filteredData.length > 0 ? filteredData.map((row, index) => (
           <tr key={row.id}>
             <td>{index + 1}</td>
             <td>
-              <div className="MainSpeciesRow">
+              {/* <div className="MainSpeciesRow">
                 <div className="mainSpeciesStyle">
                   <div className="childSpecies1">
                     <img src="/Icon/bear.png" alt="" className="img1" />
@@ -329,7 +333,8 @@ function TableOne({ data, searchTerm }) {
                   </div>
                 </div>
                 <div>{row.species}</div>
-              </div>
+              </div> */}
+              <SpeciesDesign species={row.species} />
             </td>
             <td>{row.eggIdentifier}</td>
             <td>
@@ -342,11 +347,17 @@ function TableOne({ data, searchTerm }) {
             <td>{row.width}</td>
           </tr>
         )) : (
-          <tr><td colSpan="9">Data Not Found </td></tr> // Message when no data matches
+          <tr><td colSpan="9">Data Not Found </td></tr> 
         )}
-      </tbody>
+
+
+        </tbody>
+        {/* </div> */}
+     
     </table>
-  </div>  
+    </div>
+
+  </>
   );
 }
 

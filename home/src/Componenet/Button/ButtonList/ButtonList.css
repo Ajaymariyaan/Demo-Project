@@ -7,15 +7,49 @@
     align-items: center;
     margin:5px 15px; 
     padding:5px 15px; 
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border-bottom: 1px solid grey; 
-    width: auto;
-    
-    
-    
-   
-    
-    
+    width: auto;  
+}
+
+
+@media screen and (max-width: 650px) {
+    .ButtonList{
+ display: flex;
+ flex-direction:row;
+ overflow-x: scroll;
+
+    }
+/* 
+.ButtonList.active{
+
+text-underline-offset:15px green ;
+
+}
+
+.headerButton:focus{
+
+    color: green;
+ 
+     text-decoration: underline ; */
+     /* text-decoration-line:calc(10px); */
+     /* text-shadow: 2px red ; */
+     /* text-underline-offset:15px ; */
+     
+/* } */
+
+    }
+
+
+.headerButton:focus{
+
+    color: green;
+ 
+     text-decoration: underline ;
+     /* text-decoration-line:calc(10px); */
+     /* text-shadow: 2px red ; */
+     text-underline-offset:9px ;
+     
 }
 
 /* .ButtonTemplateStyle1{
@@ -40,5 +74,26 @@ width:auto
     border:white;
     color:grey;
     cursor: pointer;
+    text-underline-offset:9px grey;
+    
+    
 
 }
+
+.headerButton.active {
+    color: green;
+ 
+     text-decoration: underline ;
+     /* text-decoration-line:calc(10px); */
+     /* text-shadow: 2px red ; */
+     text-underline-offset:9.5px ;
+     
+    
+
+}
+
+/* .ButtonList.active{
+
+text-underline-offset:9px green ;
+
+} */

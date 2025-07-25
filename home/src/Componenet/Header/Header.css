@@ -1,3 +1,4 @@
+
 .DivParaSearch{
     display: flex;
     flex-direction: row;
@@ -13,3 +14,17 @@
 
 
 }
+
+    
+
+
+    @media screen and (max-width: 350px) {
+
+    .DivParaSearch{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    }
+    }
+

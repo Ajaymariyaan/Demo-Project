@@ -1,34 +1,46 @@
+
 body{
     background-color:rgb(184, 209, 187);
-    margin-right:15px;
+  
     margin-left: 12px;
     border: 1px solid whitesmoke;
-     overflow: hidden; /* Prevent scroll on the page */
-  
-    
-    
-  
-
+     overflow:auto; 
+         width: auto;
+    margin-right: 12px; 
+    height: 480px;
 
 }
 
+@media screen and (max-width: 660px){
+    body{
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+    
+}
+
+@media screen and (max-width: 300px){
+    body{
+        overflow-y: scroll;
+        overflow-x: scroll;
+        width: 100%;
+    }
+    
+}
 .DivMain{
     background-color:white;
     width:auto;
     height:auto;
     box-shadow: 0 2px 4px 0 grey;
-    
-
-
-
-
-    
 }
+
+
 .Div1{
     width:auto;
-
-
 }
+
+
+
 
 .Div2{
     margin-left: 0%;
@@ -40,16 +52,24 @@ body{
     /* border-top: 1px solid  rgb(230, 238, 231); */
     align-items:center ;
     padding:5px 15px;
-    
-    
-
 
 }
+
+
+@media screen and (max-width: 600px) {
+    .Div2{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+    }
+
 
 .Div3{
  width: 100%;
  background-color: white;
- height: 100vh;
+ height: 100%;
  background-color:  rgb(230, 238, 231);
 box-shadow: 0 2px 4px 0 grey;
  
@@ -69,16 +89,47 @@ box-shadow: 0 2px 4px 0 grey;
     justify-content: center;
     padding: 6px;
 }
+
+@media screen and (max-width: 350px){
+    .SearchDownload{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+
+
+    }
+
+}
+
+
 .CustomButtonDesign{
-    margin-top: 6px;
-    padding: 4px;
+   
+    padding: 6px;
     align-items: center;
   
 }
 
 
 .eggCount{
-    /* background-color: rgb(162, 161, 161); */
+   
     color:rgb(125, 123, 123)
 
 }
+.headerButton.active {
+
+}
+
+
+
+@media screen and (min-width: 660px) {
+    
+
+        
+    }
+
+    .downloadFiltBtn{
+        display:flex;
+        flex-direction: row;
+    }
+
+    
